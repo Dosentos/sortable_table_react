@@ -1,17 +1,15 @@
 import React from 'react';
 import {render} from 'react-dom';
-import AwesomeComponent from './AwesomeComponent.jsx';
+import SortableTable from './testTable.jsx';
 
-class App extends React.Component {
-  render () {
-    return (
-      <div>
-        <p> Hello React Project</p>
-        <AwesomeComponent />
-      </div>
-    );
-  }
+class App extends React.Component{
+    render() {
+        return (
+            <div>
+                <SortableTable />
+            </div>
+        );
+    }
 }
-
 
 render(<App/>, document.getElementById('app'));
