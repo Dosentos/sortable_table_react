@@ -22,7 +22,21 @@ var tableData = [
 class SortableTable extends React.Component {
     renderTable() {
         return (
-            <Table className="table" data={tableData} />
+            <Table className="table table-responsive" 
+                filterable={['id','etunimi', 'sukunimi', 'paikkakunnalta']}
+                noDataText="No matching records found"
+                itemsPerPage={5}
+                currentPage={0}
+                sortable={true}
+                data={tableData}>
+                <Thead>
+                    <Th column="id">ID</Th>
+                    <Th column="etunimi">Etunimi</Th>
+                    <Th column="sukunimi">Sukunimi</Th>
+                    <Th column="sähköposti">Sähköposti</Th>
+                    <Th column="paikkakunnalta">Paikkakunnalta</Th>
+                </Thead>
+            </Table>
         )
     }
 
