@@ -1,6 +1,10 @@
 import React from 'react';
 import Reactable from 'reactable';
 
+/* Here's tutorial for getting form data from user
+https://facebook.github.io/react/docs/forms.html
+*/
+
 var Table = Reactable.Table,
     Thead = Reactable.Thead,
     Th = Reactable.Th;
